@@ -51,6 +51,7 @@ const HeaderBar = () => {
                   <div className="flex-1 pb-2"><NavLink to="/company/about" className={getNavLinkClass}>About Us</NavLink></div>
                   <div className="flex-1 pb-2"><NavLink to="/company/team" className={getNavLinkClass}>Our Team</NavLink></div>
                   <div className="flex-1"><NavLink to="/company/gallery" className={getNavLinkClass}>Gallery</NavLink></div>
+                  
                 </div>
               )}
             </div>
