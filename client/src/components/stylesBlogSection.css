@@ -1,0 +1,12 @@
+.newhoverEffects {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-color: #ffffff; /* Initial background color */
+    box-shadow: 33.653846740722656px 33.653846740722656px 96.15384674072266px 9.615385055541992px rgba(0, 0, 0, 0.15);
+}
+
+.newhoverEffects:hover {
+    transform: scale(1.05); /* Scales both width slightly and height more significantly */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); /* Deeper and wider shadow for a dramatic effect */
+    background-color: #f8f8f8; /* Changes background color on hover for a subtle effect */
+}
+  
