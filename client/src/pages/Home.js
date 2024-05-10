@@ -43,21 +43,21 @@ function Home() {
     { 
       url: logistics, 
       heading: 'Logistics Services', 
-      description: 'Lorem ipsum dolor sit amet, <br /> A diam sollicitudin tempor id eu nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> Facilisis sed odio morbi quis commodo. Purus in mollis nunc sed id semper risus. <br /> Nunc congue nisi vitae suscipit tellus mauris. A diam sollicitudin tempor id eu nisl. Magna etiam tempor orci eu lobortis. Tortor consequat id porta nibh venenatis cras sed felis. Gravida dictum fusce ut placerat orci  ' ,
+      description: `Max Pacific Corporation Limited specializes in expert logistics and transportation of heavy machinery across India's metros. We manage and engineer the entire process from origin to destination, ensuring precision in every detail. Our dedicated team works tirelessly to guarantee your goods are delivered efficiently and safely. <br /> Choose Max Pacific for the best logistics services tailored to meet your needs and exceed expectations. ` ,
       direction: 'left' 
     },
 
     { 
       url: transportation, 
       heading: 'Transportation', 
-      description: 'Lorem ipsum dolor sit amet. Nunc congue nisi vitae suscipit tellus mauris. <br /> A diam sollicitudin tempor id eu nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> Facilisis sed odio morbi quis commodo. Purus in mollis nunc sed id semper risus. <br /> Nunc congue nisi vitae suscipit tellus mauris. A diam sollicitudin tempor id eu nisl. Magna etiam tempor orci eu lobortis. Tortor consequat id porta nibh venenatis cras sed felis. Gravida dictum fusce ut placerat orci  ', 
+      description: `At Max Pacific Corporation Limited, we excel in providing premium transportation solutions that ensure your goods and heavy machinery are moved swiftly and safely across India's dynamic cityscapes. Our professional team leverages advanced logistics technology and robust processes to deliver exceptional service and reliability. We tailor our transportation strategies to fit the unique demands of each client, emphasizing timely deliveries and secure handling at every step. With Max Pacific, your logistics needs are met with precision and care, helping your business achieve smooth operational success. `, 
       direction: 'right' 
     },
 
     { 
       url: warehouse, 
       heading: 'Warehousing', 
-      description: 'Lorem ipsum dolor sit amet, Purus in mollis nunc sed id semper risus. Nunc congue nisi vitae suscipit tellus mauris. <br /> A diam sollicitudin tempor id eu nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> Facilisis sed odio morbi quis commodo. Purus in mollis nunc sed id semper risus. <br /> Nunc congue nisi vitae suscipit tellus mauris. A diam sollicitudin tempor id eu nisl. Magna etiam tempor orci eu lobortis. Tortor consequat id porta nibh venenatis cras sed felis. Gravida dictum fusce ut placerat orci  ',
+      description: `Max Pacific Corporation Limited offers state-of-the-art warehouse services, providing secure, scalable solutions tailored to your specific needs. Our facilities are strategically located to optimize logistics efficiency, ensuring quick access and distribution across India. With advanced inventory management systems and a dedicated team of logistics professionals, we guarantee the safekeeping and swift handling of your goods and enhance your supply chain, minimize costs, and improve overall operational agility. ` ,
       direction: 'left'  
     }
 
@@ -105,7 +105,7 @@ function Home() {
             <div style={{color: 'white', fontSize: '46.29px', fontFamily: 'Inter', fontWeight: 800, lineHeight: '60px' ,wordWrap: 'break-word', marginTop: '20px'}}>Your gateway<br/>to all your Logistics Solution</div>
 
             <div style={{width: '70%', marginTop: '30px' ,color: 'white', textAlign: 'justify', fontSize: '16px', fontFamily: 'Inter', fontWeight: 300, lineHeight: '24.24px', wordWrap: 'break-word'}}>
-              In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus. 
+              Max Pacific Corporation Limited, excels in providing innovative logistics and transportation solutions designed to exceed customer expectations and enhance efficiency. 
             </div>
             
             <div className=' flex gap-10 mt-10'>

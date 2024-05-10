@@ -65,7 +65,7 @@ function Services() {
       {/* Width 11/12 dena bacha hai */}
       <div className='w-11/12 mx-auto'>
         <h1 className='mt-11 font-extrabold text-5xl'>Services</h1>
-        <h2 className='w-3/4 mt-6 font-normal text-2xl text-customBlack text-justify'>Welcome to your source for Logistics Industry Insights & Solutions! Learn interesting facts on industry transformation, covering topics from trends to service excellence and beyond.</h2>
+        <h2 className='w-3/4 mt-6 font-normal text-2xl text-customBlack text-justify'>Transform your online business with seamless logistics solutions. Improve customer satisfaction and drive conversions with reliable, timely deliveries that exceed expectations.</h2>
       </div>
 
       {/* This is the tabs thing */}
