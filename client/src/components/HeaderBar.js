@@ -3,8 +3,11 @@ import { NavLink } from 'react-router-dom';
 import Button from './Button';
 import logo from '../assests/Logo.png';
 
+import './HeaderBarStyles.css';
+
 const HeaderBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   const getNavLinkClass = ({ isActive }) => {
@@ -15,6 +18,10 @@ const HeaderBar = () => {
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const handleClickOutside = (event) => {
@@ -41,7 +48,6 @@ const HeaderBar = () => {
           </div>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 gap-10">
             <NavLink to="/" className={getNavLinkClass}>Home</NavLink>
-            
             <div className="relative" ref={dropdownRef}>
               <button onClick={toggleDropdown} className={getNavLinkClass({isActive: isDropdownOpen})}>
                 Company
@@ -51,17 +57,34 @@ const HeaderBar = () => {
                   <div className="flex-1 pb-2"><NavLink to="/company/about" className={getNavLinkClass}>About Us</NavLink></div>
                   <div className="flex-1 pb-2"><NavLink to="/company/team" className={getNavLinkClass}>Our Team</NavLink></div>
                   <div className="flex-1"><NavLink to="/company/gallery" className={getNavLinkClass}>Gallery</NavLink></div>
-                  
                 </div>
               )}
             </div>
-
-
             <NavLink to="/blogs" className={getNavLinkClass}>Blogs</NavLink>
             <NavLink to="/services" className={getNavLinkClass}>Services</NavLink>
             <NavLink to="/contact" className={getNavLinkClass}>Contact Us</NavLink>
             <Button text="Track Shipment" link='/TrackShipment' />
           </div>
+          <div className="md:hidden">
+            <button onClick={handleMobileMenuToggle}>
+              <span className='text-green-600'>Menu</span>
+            </button>
+          </div>
+
+          {isMobileMenuOpen && (
+            <div className="fixed inset-y-0 right-0 z-50 flex flex-col items-center bg-white w-1/3 md:hidden">
+              <button onClick={handleMobileMenuToggle} className="self-end p-4">
+                Close {/* This button can be styled or replaced with an icon */}
+              </button>
+              <NavLink to="/" className={getNavLinkClass}>Home</NavLink>
+              <NavLink to="/blogs" className={getNavLinkClass}>Blogs</NavLink>
+              <NavLink to="/services" className={getNavLinkClass}>Services</NavLink>
+              <NavLink to="/contact" className={getNavLinkClass}>Contact Us</NavLink>
+              <Button text="Track Shipment" link='/TrackShipment' />
+            </div>
+          )}
+
+
         </div>
       </div>
     </header>

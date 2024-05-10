@@ -96,7 +96,7 @@ function BlogSection() {
         </div>
 
         <div className="mt-10 text-justify" style={{color: "#222222", fontFamily: "Inter", fontWeight: 500}}>
-          In augue ligula, feugiat ut nulla consequat. Ut est lacus, molestie in arcu no, iaculis vehicula ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam interdum nulla, sed laoreet risus lectus. 
+          We offer holistic solutions and informative articles to keep you updated on the latest trends in domestic and international logistics. Visit our blog to expand your knowledge, discover new insights, and nurture the growth of your business. 
         </div>
        
         <div className=" bg-orange-600 px-6 py-4 mt-10 items-center justify-center cursor-pointer give-hover hover:bg-orange-700 transition duration-300 ease-in-out" 

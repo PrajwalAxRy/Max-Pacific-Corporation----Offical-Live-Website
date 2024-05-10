@@ -8,15 +8,41 @@ import NareshImage from '../assests/Team/Naresh.jpg';
 
 function Team() {
 
-  const handleClickRam = () => {
+  const handleClickRamX = () => {
     window.open('https://www.linkedin.com/in/ram-prakash-singh-82483b30/', '_blank');
   };
 
-  const handleClickKamlesh = () => {
+  const handleClickRamLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/ram-prakash-singh-82483b30/', '_blank');
+  };
+
+  const handleClickRamFacebook = () => {
+    window.open('https://www.linkedin.com/in/ram-prakash-singh-82483b30/', '_blank');
+  };
+
+  const handleClickKamleshX = () => {
+    window.open('https://www.linkedin.com/in/kamlesh-aggarwal-66475767/', '_blank');
+  };
+
+  const handleClickKamleshLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/kamlesh-aggarwal-66475767/', '_blank');
+  };
+
+  const handleClickKamleshFacebook = () => {
+    window.open('https://www.linkedin.com/in/kamlesh-aggarwal-66475767/', '_blank');
+  };
+
+  
+
+  const handleClickNareshX = () => {
     window.open('https://www.linkedin.com/in/naresh-aggarwal-35688818/', '_blank');
   };
 
-  const handleClickNaresh = () => {
+  const handleClickNareshLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/naresh-aggarwal-35688818/', '_blank');
+  };
+
+  const handleClickNareshFacebook = () => {
     window.open('https://www.linkedin.com/in/naresh-aggarwal-35688818/', '_blank');
   };
 
@@ -29,21 +55,15 @@ function Team() {
 
       <div className='w-full min-h-14'  style={{backgroundColor: '#F7F7F7'}}>
         <div className='w-11/12 mx-auto flex py-10 gap-4 justify-evenly'>
-          <TeamCard
-            image={RamPrakashImage}
-            name="Ram Prakash Singh"
-            designation={'Chief Technical Officer'}
-            description={'Ram Prakash Singh is the Chief Technical Officer at our company. He is a very hardworking and dedicated person. He is responsible for the technical aspects of the company.'} 
-            className=' shadow-2xl'
-            onClick={handleClickRam}
-          />
           
           <TeamCard
             image={KamleshImage}
             name="Kamlesh Agarwal"
             designation={'Managing Director & Founder'} 
             description={'Ram Prakash Singh is the Chief Technical Officer at our company. He is a very hardworking and dedicated person. He is responsible for the technical aspects of the company.'} 
-            onClick={handleClickKamlesh}
+            onClickX={handleClickKamleshX}
+            onClickLinkedIn={handleClickKamleshLinkedIn}
+            onClickFacebook={handleClickKamleshFacebook}
           />
 
           <TeamCard
@@ -51,7 +71,20 @@ function Team() {
             name="Naresh Agarwal"
             designation={'Director'}
             description={'Ram Prakash Singh is the Chief Technical Officer at our company. He is a very hardworking and dedicated person. He is responsible for the technical aspects of the company.'} 
-            onClick={handleClickNaresh}
+            onClickX={handleClickNareshX}
+            onClickLinkedIn={handleClickNareshLinkedIn}
+            onClickFacebook={handleClickNareshFacebook  }
+          />
+
+          <TeamCard
+            image={RamPrakashImage}
+            name="Ram Prakash Singh"
+            designation={'Chief Technical Officer'}
+            description={'Ram Prakash Singh is the Chief Technical Officer at our company. He is a very hardworking and dedicated person. He is responsible for the technical aspects of the company.'} 
+            className=' shadow-2xl'
+            onClickX={handleClickRamX}
+            onClickLinkedIn={handleClickRamLinkedIn}
+            onClickFacebook={handleClickRamFacebook}
           />
         </div>
       </div>
