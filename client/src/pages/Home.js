@@ -7,10 +7,12 @@ import Services from '../components/textImage';
 import DataLayout from '../components/DataLayout';
 import BlogSection from '../components/BlogSection';
 
+import './Banner.css';
 
 import mailIcon from '../assests/mailIcon.png';
 import phoneIcon from '../assests/PhoneIcon.png';
 import locationIcon from '../assests/locationIcon.png';
+import googleMaps from '../assests/googleMaps.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
@@ -73,19 +75,7 @@ function Home() {
     marginTop: '-5rem', // Adjust the margin as needed
   };
 
-  const banner = {
-    background: 'rgba(217, 217, 217, 0.20)',
-    height: '37px',
-    width: '357px',
-    color: 'white', 
-    fontSize: '25.89px', 
-    fontFamily: 'Inter', 
-    fontWeight: 400, 
-    borderLeft: '10px solid orange',
-    paddingLeft: '-10px', // Add paddingLeft with value of -5px
-    textAlign: "center",
-    justifyContent: "center" // Add justify content center
-  }
+
 
 //   <div style={{ width: '8px', height: '37px', left: '0px', top: '0px', position: 'absolute', background: '#E8923F' }}></div>
 //   <div style={{ left: '24px', top: '2px', position: 'absolute', color: 'white', fontSize: '25.89px', fontFamily: 'Inter', fontWeight: 400, lineHeight: '34.96px', wordWrap: 'break-word' }}>
@@ -95,22 +85,22 @@ function Home() {
   const carouselItems = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight"];
 
   return (
-    <div>
+    <div className='pt-20'>
         <div style={backgroundStyle}>
-          <div className="w-3/6 z-10 h-4/5 ml-20 text-red-600">
+          <div className="w-4/6 z-10 h-4/5 ml-20 text-red-600">
             <div className='w-full h-1/3'></div>
-            <div style={banner}>
+            <div className="banner">
               Welcome To Max Pacific
             </div>
-            <div style={{color: 'white', fontSize: '46.29px', fontFamily: 'Inter', fontWeight: 800, lineHeight: '60px' ,wordWrap: 'break-word', marginTop: '20px'}}>Your gateway<br/>to all your Logistics Solution</div>
+            <div className='textBanner'>Your gateway<br/>to all your Logistics Solution</div>
 
-            <div style={{width: '70%', marginTop: '30px' ,color: 'white', textAlign: 'justify', fontSize: '16px', fontFamily: 'Inter', fontWeight: 300, lineHeight: '24.24px', wordWrap: 'break-word'}}>
+            <div className='secondaryBanner'>
               Max Pacific Corporation Limited, excels in providing innovative logistics and transportation solutions designed to exceed customer expectations and enhance efficiency. 
             </div>
             
-            <div className=' flex gap-10 mt-10'>
-            <Button text="Track Shipment" link='/TrackShipment'/>
-            <Button text="Request Quote" link='/contact' />
+            <div className='btn'>
+              <Button text="Track Shipment" link='/TrackShipment'/>
+              <Button text="Request Quote" link='/contact' />
             </div>
           </div>
         </div>
@@ -119,7 +109,7 @@ function Home() {
           <div>
             <span style={{color: '#060B22', fontSize: '32px', fontFamily: 'Inter', fontWeight: 500, lineHeight: '48.49px', wordWrap: 'break-word'}}>Trusted Partners</span>
             <br />
-            <div className=' leading-7' style={{width: '60%', color: 'black', fontSize: '16px', fontFamily: 'Inter', fontWeight: 300, textAlign: 'justify', marginTop: '10px'}}>Since 2005, MPCL has been dedicated to delivering top-notch services, transforming the logistics sector. In under seven years, we've become a key player, covering 6000+ pincodes in India with a team of 500+ professionals. With ISO 9001:2000 certification, we ensure excellence in every service, from logistics and warehousing to transportation solutions.</div>
+            <div className=' leading-7' style={{width: '60%', color: 'black', fontSize: '16px', fontFamily: 'Inter', fontWeight: 300, textAlign: 'justify', marginTop: '10px'}}>Since 2005, MPCL has been dedicated to delivering top-notch services, transforming the logistics sector. In under seven years, we've become a key player, covering 6000+ pincodes in India with a team of 500+ professionals. With ISO 9001:2015 certification, we ensure excellence in every service, from logistics and warehousing to transportation solutions.</div>
           </div>
           <div>
             <img className=' h-40 w-72'  src={isoTrust} alt="" />
@@ -145,7 +135,9 @@ function Home() {
           <MyCarousel items={carouselItems} />
         </div> */}
 
-        <BlogSection/>
+        <div className="hidden lg:block">
+          <BlogSection />
+        </div>
 
     </div>
   )

@@ -4,12 +4,15 @@ import { useForm } from 'react-hook-form';
 import toUseBg from '../assests/useTransporation.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelopeOpen, faLocationDot ,faArrowRightFromBracket,faRoute, faChartSimple, faTruckPickup, faComment, faFileClipboard, faMoneyCheck, faDownload, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelopeOpen, faLocationDot ,faArrowRightFromBracket,faRoute, faChartSimple, faTruckPickup, faComment, faFileClipboard, faMoneyCheck, faDownload, faMapMarkerAlt, faMapLocation } from "@fortawesome/free-solid-svg-icons";
 
+import googleMaps from '../assests/googleMaps.png'
 
 const Contact = () => {
 
   const { register, handleSubmit, formState: {errors} } = useForm();
+
+  const [clicked, setClicked] = useState(false);
 
   console.log("errors", errors)
 
@@ -36,6 +39,12 @@ const Contact = () => {
     console.log(formData); // Here you can replace with your submission logic, e.g., sending data to a server
   };
 
+  const handleClickMap = () => {
+    // Navigate to Google Maps URL in a new tab
+    window.open('https://www.google.co.in/maps/place/MAX+PACIFIC+CORPORATION+LTD.+(MPCL)/@28.419624,77.035232,17z/data=!3m1!4b1!4m6!3m5!1s0x390d17fb741ff7ad:0x85082512912bc80a!8m2!3d28.419624!4d77.0378069!16s%2Fg%2F11by_mxjb4?entry=ttu', '_blank');
+    // Update state to indicate the click
+    setClicked(true);
+  };
 
   return (
 
@@ -50,17 +59,18 @@ const Contact = () => {
             For any queries, please feel free to contact us through the following channels:
               <div className="bg-orange-100 border-l-8 text-lg border-orange-500 px-4 py-3 mb-5 w-3/4 mt-5">
               <FontAwesomeIcon className="h-4 w-4 items-center justify-center mr-2 text-orange-600" icon={faPhone} />
-                <strong className="text-orange-600">Phone No:</strong> <span className="text-gray-800">+91 1111 111 111</span>
+                <strong className="text-orange-600">Phone No:</strong> <span className="text-gray-800">+91 9311 112 311</span>
               </div>
 
               <div className="bg-orange-100 border-l-8 border-orange-500 text-lg px-4 py-3 mb-5 w-3/4">
                 <FontAwesomeIcon className="h-5 w-5 items-center justify-center mr-2 text-orange-600" icon={faEnvelopeOpen} />
-                <strong className="text-orange-600">Email ID:</strong> <span className="text-gray-800">max@pacific.crazynet</span>
+                <strong className="text-orange-600">Email ID:</strong> <span className="text-gray-800">info@mpclcorp.co.in</span>
               </div> 
 
               <div className="bg-orange-100 border-l-8 border-orange-500 px-4 py-3 text-lg w-3/4">
               <FontAwesomeIcon className="h-5 w-5 items-center justify-center mr-2 text-orange-600" icon={faLocationDot} />
-                <strong className="text-orange-600 overflow-hidden">Location:</strong> <span className="text-gray-700">JMD Megapolis, Gurugram</span>
+                <strong className="text-orange-600 overflow-hidden">Location:</strong> <span className="text-gray-700">JMD Megapolis</span>
+                <img src={googleMaps} onClick={handleClickMap} className='cursor-pointer h-8 inline ml-3'  alt="Link redirecting to Google Maps" />
               </div> 
 
           </p>
@@ -110,13 +120,7 @@ const Contact = () => {
             })} placeholder='xxxx@yyy.zz' type="email" id="email" name="email" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" />
             <p className=' text-red-500 text-xs pt-1 pl-1'>{errors.email?.message}</p>
           </label>
-          <label className="block text-blue-950 font-bold">
-            Description:
-            <textarea {...register("description", {
-              required: 'Please enter your message'
-            })} placeholder='Enter your message' name="description" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
-            <p className=' text-red-500 text-xs pt-1 pl-1'>{errors.description?.message}</p>
-          </label>
+          
           <label className="block">
             <p className='text-blue-950 font-bold'>Category</p>
             <select {...register("reason")} name="reason" value={formData.reason} onChange={handleChange} className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
@@ -125,6 +129,15 @@ const Contact = () => {
               ))}
             </select>
           </label>
+
+          <label className="block text-blue-950 font-bold">
+            Description:
+            <textarea {...register("description", {
+              required: 'Please enter your message'
+            })} placeholder='Enter your message' name="description" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+            <p className=' text-red-500 text-xs pt-1 pl-1'>{errors.description?.message}</p>
+          </label>
+          
           <button className=" w-full mx-auto w-80 shadow bg-orange-400 hover:bg-orange-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type='submit'>
           Submit
         </button>      

@@ -2,13 +2,14 @@ import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Button from './Button';
 import logo from '../assests/Logo.png';
-
-import './HeaderBarStyles.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const HeaderBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const mobileMenuRef = useRef(null);
 
   const getNavLinkClass = ({ isActive }) => {
     return isActive 
@@ -28,6 +29,9 @@ const HeaderBar = () => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setIsDropdownOpen(false);
     }
+    if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+      setIsMobileMenuOpen(false);
+    }
   };
 
   useEffect(() => {
@@ -38,10 +42,10 @@ const HeaderBar = () => {
   }, []);
 
   return (
-    <header className="bg-customBlack shadow fixed top-0 w-full z-10">
-      <div className="mx-auto px-10 sm:px-6 lg:px-20">
+    <header className="bg-customBlack shadow top-0 w-full z-10">
+      <div className="mx-auto px-10">
         <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+          <div className="flex justify-start w-0 flex-1">
             <NavLink to="/" className={getNavLinkClass}>
               <img className="w-auto h-12" src={logo} alt="Your Company Logo" />
             </NavLink>
@@ -67,24 +71,25 @@ const HeaderBar = () => {
           </div>
           <div className="md:hidden">
             <button onClick={handleMobileMenuToggle}>
-              <span className='text-green-600'>Menu</span>
+              <FontAwesomeIcon className='h-6 text-white' icon={faBars} />
             </button>
           </div>
 
           {isMobileMenuOpen && (
-            <div className="fixed inset-y-0 right-0 z-50 flex flex-col items-center bg-white w-1/3 md:hidden">
-              <button onClick={handleMobileMenuToggle} className="self-end p-4">
-                Close {/* This button can be styled or replaced with an icon */}
+            <div ref={mobileMenuRef} className="fixed inset-y-0 right-0 z-50 flex flex-col items-center gap-y-6 bg-customBlack w-[30%] min-w-52 md:hidden">
+              <button onClick={handleMobileMenuToggle} className="self-end p-4 text-white">
+                <FontAwesomeIcon className='h-6 mr-5 mb-6' icon={faTimes} />
               </button>
               <NavLink to="/" className={getNavLinkClass}>Home</NavLink>
+              <NavLink to="/company/about" className={getNavLinkClass}>About Us</NavLink>
+              <NavLink to="/company/team" className={getNavLinkClass}>Our Team</NavLink>
+              <NavLink to="/company/gallery" className={getNavLinkClass}>Gallery</NavLink>
               <NavLink to="/blogs" className={getNavLinkClass}>Blogs</NavLink>
               <NavLink to="/services" className={getNavLinkClass}>Services</NavLink>
               <NavLink to="/contact" className={getNavLinkClass}>Contact Us</NavLink>
               <Button text="Track Shipment" link='/TrackShipment' />
             </div>
           )}
-
-
         </div>
       </div>
     </header>

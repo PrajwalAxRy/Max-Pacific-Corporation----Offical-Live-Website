@@ -22,7 +22,7 @@ function App() {
     <Router>
       <div>
         <HeaderBar/>
-        <div className=" pt-20">
+        <div>
           <Routes>
             <Route path="/" element={<Home />} exact />
             <Route path="/company" element={<Company />} />

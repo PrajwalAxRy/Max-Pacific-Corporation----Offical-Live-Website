@@ -49,7 +49,7 @@ function Footer() {
 
                   <div className=' text-white'>
                     
-                    <div>
+                    <div className='hidden lg:block'>
 
                       <div className='flex items-center mb-8'>
                           <div><img src={mailIcon} alt='Just an icon' className=' w-12 h-12 mr-2' /></div>

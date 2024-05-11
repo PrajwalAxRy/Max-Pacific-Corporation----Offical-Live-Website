@@ -133,7 +133,7 @@ function Services() {
                           className=" mt-8 shadow-orange-500 font-bold shadow-2xl bg-blue-950 text-white rounded-full py-2 w-1/3 hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-50 button-float"
                           onClick={handleClickScheduleDemo}
                         >
-                            Schedule a Demo
+                            Contact Us
                         </button>
 
                     </div>
@@ -158,7 +158,7 @@ function Services() {
                                                             fontStyle: 'normal',
                                                             letterSpacing: '0.25em',
                                                           }}>
-                              Transportation <span className='pl-3'>Services</span>
+                              Transportation <span className='pl-3'>Services here</span>
                             </div>
                         
                             <div className='mt-16 text-4xl text-justify pr-14' style={{ fontFamily: '"Inter", monospace',
@@ -178,7 +178,7 @@ function Services() {
                               className=" mt-8 shadow-orange-500 font-bold shadow-2xl bg-blue-950 text-white rounded-full py-2 w-1/3 hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-50 button-float"
                               onClick={handleClickScheduleDemo}
                             >
-                                Schedule a Demo
+                                Contact Us
                             </button>
                       </div>
                       
@@ -222,7 +222,7 @@ function Services() {
                                     className=" mt-8 shadow-orange-500 font-bold shadow-2xl bg-blue-950 text-white rounded-full py-2 w-1/3 hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-opacity-50 button-float"
                                     onClick={handleClickScheduleDemo}
                                   >
-                                      Schedule a Demo
+                                      Contact Us
                                   </button>
                                 </div>
                                 

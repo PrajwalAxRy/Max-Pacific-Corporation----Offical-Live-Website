@@ -9,7 +9,10 @@ module.exports = {
         customBlack: '#060B22',
       },
       fontSize: {
-        custom16px: '16px', // Define custom text size
+        custom16px: '16px',
+      },
+      screens: {
+        'md': '950px', 
       },
     },
   },
@@ -17,4 +20,3 @@ module.exports = {
 
   ],
 }
-

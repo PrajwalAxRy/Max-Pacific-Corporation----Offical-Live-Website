@@ -83,7 +83,7 @@ function DataLayout() {
                       letterSpacing: "12.95px",
                     }}
                   >
-                   100+ 
+                   150+ 
                   </div>
                   <div
                     className="text-4xl text-center gradient-text-three"
@@ -111,7 +111,7 @@ function DataLayout() {
                       letterSpacing: "12.95px",
                     }}
                   >
-                    150+
+                    100+
                   </div>
                   <div
                     className="text-4xl text-center gradient-text-four"
