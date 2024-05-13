@@ -12,6 +12,7 @@ module.exports = {
         custom16px: '16px',
       },
       screens: {
+        'sm': '560px',
         'md': '950px', 
       },
     },
