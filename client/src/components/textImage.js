@@ -1,5 +1,4 @@
 import React from 'react';
-import './textImage.css'; // Adjust the path as necessary
 
 const TextImage = ({ title = 'Services', images }) => {
   return (

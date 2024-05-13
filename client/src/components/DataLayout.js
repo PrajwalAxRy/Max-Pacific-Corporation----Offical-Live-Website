@@ -9,7 +9,7 @@ function DataLayout() {
     style={{ backgroundColor: "#060B22" }} >
       <div className=" bg-orange-600 pt-16 px-16 w-full min-h-10" style={{ backgroundColor: "#060B22" }}>
         <div className="flex min-h-10  gap-1">
-          <div style={{ width: "60%" }}>
+          <div className="w-full lg:w-3/5">
             {/* //TODO: Here we will write the above two boxes */}
             <div className="flex h-1/2 gap-1">
               <div
@@ -18,21 +18,19 @@ function DataLayout() {
               >
                 <div>
                   <div
-                    className="text-7xl text-center mb-2 gradient-text-one"
+                    className="text-xl md:text-2xl lg:text-7xl mt-4 lg:mt-0 text-center mb-0 lg:mb-2 gradient-text-one tracking-normal lg:tracking-widest"
                     style={{
                       fontFamily: "Inter",
                       fontWeight: 800,
-                      letterSpacing: "12.95px",
                     }}
                   >
                     19
                   </div>
                   <div
-                    className="text-4xl text-center gradient-text-one"
+                    className="px-4 md:px-0 text-base md:text-xl lg:text-4xl text-center gradient-text-one tracking-normal lg:tracking-widest leading-tight mb-3 lg:mb-0"
                     style={{
                       fontFamily: "Inter",
                       fontWeight: 800,
-                      letterSpacing: "3.95px",
                     }}
                   >
                     Years of Experience
@@ -46,21 +44,19 @@ function DataLayout() {
               >
                 <div>
                   <div
-                    className="text-7xl text-center mb-2 gradient-text-two"
+                    className="text-xl md:text-2xl lg:text-7xl mt-4 lg:mt-0 text-center mb-0 lg:mb-2 gradient-text-two tracking-normal lg:tracking-widest"
                     style={{
                       fontFamily: "Inter",
                       fontWeight: 800,
-                      letterSpacing: "12.95px",
                     }}
                   >
                     500+
                   </div>
                   <div
-                    className="text-4xl text-center gradient-text-two"
+                    className=" text-base md:text-xl lg:text-4xl text-center gradient-text-two tracking-normal lg:tracking-widest leading-tight mb-3 lg:mb-0"
                     style={{
                       fontFamily: "Inter",
                       fontWeight: 800,
-                      letterSpacing: "3.95px",
                     }}
                   >
                     Employees
@@ -76,21 +72,19 @@ function DataLayout() {
               >
                 <div>
                   <div
-                    className="text-7xl text-center mb-2 gradient-text-three"
+                    className="text-xl md:text-2xl lg:text-7xl mt-4 lg:mt-0 text-center mb-0 lg:mb-2 gradient-text-three tracking-normal lg:tracking-widest"
                     style={{
                       fontFamily: "Inter",
                       fontWeight: 800,
-                      letterSpacing: "12.95px",
                     }}
                   >
                    150+ 
                   </div>
                   <div
-                    className="text-4xl text-center gradient-text-three"
+                    className="px-4 md:px-0 text-base md:text-xl lg:text-4xl text-center gradient-text-three tracking-normal lg:tracking-widest leading-tight mb-3 lg:mb-0" 
                     style={{
                       fontFamily: "Inter",
                       fontWeight: 800,
-                      letterSpacing: "3.95px",
                     }}
                   >
                     In-Service Trucks
@@ -104,21 +98,20 @@ function DataLayout() {
               >
                 <div>
                   <div
-                    className="text-7xl text-center mb-2 gradient-text-four"
+                    className="text-xl md:text-2xl lg:text-7xl mt-4 lg:mt-0 text-center mb-0 lg:mb-2 gradient-text-four tracking-normal lg:tracking-widest"
                     style={{
                       fontFamily: "Inter",
                       fontWeight: 800,
-                      letterSpacing: "12.95px",
                     }}
                   >
                     100+
                   </div>
                   <div
-                    className="text-4xl text-center gradient-text-four"
+                    className="text-base md:text-xl lg:text-4xl text-center gradient-text-four tracking-normal lg:tracking-widest leading-tight mb-3 lg:mb-0"
                     style={{
                       fontFamily: "Inter",
                       fontWeight: 800,
-                      letterSpacing: "3.95px",
+                    
                     }}
                   >
                     Branches <br /> Pan-India
@@ -127,32 +120,10 @@ function DataLayout() {
               </div>
             </div>
 
-
-            {/* //TODO: Here we will have the box below with a quote */}
-            {/* <div
-              className="w-full h-1/2 mt-1 custom-border-radius items-center justify-center text-center flex px-10   "
-              style={{ backgroundColor: "#060B22" }}
-            >
-              <div>
-                <div
-                  className="text-4xl text-center italic gradient-text-three"
-                  style={{ fontFamily: "Troochi", fontWeight: 600 }}
-                >
-                  {" "}
-                  “ We Keep India Moving ”{" "}
-                </div>
-                <div
-                  className="text-3xl text-center gradient-text-three mt-2"
-                  style={{ fontFamily: "Inter", fontWeight: 600 }}
-                >
-                  Max Speed. Max Efficiency. Max Pacific.
-                </div>
-              </div>
-            </div> */}
           </div>
 
-          <div style={{ width: "50%" }}>
-            <img src={workerImage} alt="IdkMantfyougonnado" />
+          <div className="hidden md:block h-auto md:w-1/2">
+            <img src={workerImage} alt="Worker" className="w-full h-auto" />
           </div>
         </div>
       </div>
@@ -161,17 +132,3 @@ function DataLayout() {
 }
 
 export default DataLayout;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
