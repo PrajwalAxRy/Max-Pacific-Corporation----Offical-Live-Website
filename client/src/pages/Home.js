@@ -105,14 +105,14 @@ function Home() {
           </div>
         </div>
 
-        <div className="flex justify-between px-20 mt-16 mb-16">
+        <div className="flex justify-between px-20 mt-16 mb-16 items-center">
           <div>
-            <span style={{color: '#060B22', fontSize: '32px', fontFamily: 'Inter', fontWeight: 500, lineHeight: '48.49px', wordWrap: 'break-word'}}>Trusted Partners</span>
+            <span className='headerTwo'>Trusted Partners</span>
             <br />
-            <div className=' leading-7' style={{width: '60%', color: 'black', fontSize: '16px', fontFamily: 'Inter', fontWeight: 300, textAlign: 'justify', marginTop: '10px'}}>Since 2005, MPCL has been dedicated to delivering top-notch services, transforming the logistics sector. In under seven years, we've become a key player, covering 6000+ pincodes in India with a team of 500+ professionals. With ISO 9001:2015 certification, we ensure excellence in every service, from logistics and warehousing to transportation solutions.</div>
+            <div className='contentTwo'>Since 2005, MPCL has been dedicated to delivering top-notch services, transforming the logistics sector. In under seven years, we've become a key player, covering 6000+ pincodes in India with a team of 500+ professionals. With ISO 9001:2015 certification, we ensure excellence in every service, from logistics and warehousing to transportation solutions.</div>
           </div>
           <div>
-            <img className=' h-40 w-72'  src={isoTrust} alt="" />
+            <img className='imageTwo'  src={isoTrust} alt="" />
           </div>
         </div>
         

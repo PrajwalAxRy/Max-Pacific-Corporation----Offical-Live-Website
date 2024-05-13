@@ -36,9 +36,7 @@ function TrackShipment() {
 
         </div>
       </div>
-
-
-
+      
     </div>
   )
 }
