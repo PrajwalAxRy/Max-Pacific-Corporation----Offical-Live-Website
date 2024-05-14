@@ -13,8 +13,8 @@ function Footer() {
 
     const getNavLinkClass = ({ isActive }) => {
         return isActive 
-          ? "whitespace-nowrap text-base font-medium text-orange-500 hover:text-orange-500"
-          : "whitespace-nowrap text-base font-normal text-white hover:text-orange-500";
+          ? "whitespace-nowrap font-medium text-orange-500 hover:text-orange-500"
+          : "whitespace-nowrap font-normal text-white hover:text-orange-500";
     }
 
 
@@ -30,14 +30,14 @@ function Footer() {
                   <div className=' text-yellow-50'>
                     <div style={{color: 'white', fontSize: '24px', fontFamily: 'Inter', fontWeight: 800}}>Quick Links</div>
                     <div className='flex gap-24'>
-                      <div className='mt-5 mb-10'>
+                      <div className='mt-5 mb-10 text-xs sm:text-sm lg:text-base'>
                         <div className='mb-3'><NavLink to="/" className={getNavLinkClass}>Home</NavLink></div>
                         <div className='mb-3'><NavLink to="/services" className={getNavLinkClass}>Services</NavLink></div>
                         <div className='mb-3'><NavLink to="/pricingTable" className={getNavLinkClass}>Pricing Table</NavLink></div>
                         <div className='mb-3'><NavLink to="/contact" className={getNavLinkClass}>Contact Us</NavLink></div> 
                       </div>
                       
-                      <div className='mt-5 mb-10'>
+                      <div className='mt-5 mb-10 text-xs sm:text-sm lg:text-base'>
                         <div className='mb-3'><NavLink to="/about" className={getNavLinkClass}>About Us</NavLink></div>
                         <div className='mb-3'><NavLink to="/getQuote" className={getNavLinkClass}>Request Quote</NavLink></div>
                         <div className='mb-3'><NavLink to="/getQuote" className={getNavLinkClass}>Track Shipment</NavLink></div>
