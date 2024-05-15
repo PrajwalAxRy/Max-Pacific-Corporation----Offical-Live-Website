@@ -57,19 +57,19 @@ const Contact = () => {
             <br />
             <br />
             For any queries, please feel free to contact us through the following channels:
-              <div className="bg-orange-100 border-l-8 text-xs sm:text-base md:text-lg border-orange-500 px-4 py-3 mb-5 w-auto sm:w-3/4 mt-5">
+              <div className="bg-orange-100 border-l-8 text-xs sm:text-base md:text-lg border-orange-500 px-4 py-3 mb-5 w-auto sm:w-10/12 mt-5">
               <FontAwesomeIcon className="h-3 w-3 sm:h-4 sm:w-4 items-center justify-center mr-2 text-orange-600" icon={faPhone} />
-                <strong className="text-orange-600">Phone No:</strong> <span className="text-gray-800">+91 9311 112 311</span>
+                <strong className="text-orange-600">Phone No:</strong> <span className="text-gray-800 text-nowrap">+91-9311112311</span>
               </div>
 
-              <div className="bg-orange-100 border-l-8 border-orange-500 text-xs sm:text-base md:text-lg px-4 py-3 mb-5 w-auto sm:w-3/4">
+              <div className="bg-orange-100 border-l-8 border-orange-500 text-xs sm:text-base md:text-lg px-4 py-3 mb-5 w-auto sm:w-10/12">
                 <FontAwesomeIcon className="h-3 w-3 sm:h-5 sm:w-5 items-center justify-center mr-2 text-orange-600" icon={faEnvelopeOpen} />
                 <strong className="text-orange-600">Email ID:</strong> <span className="text-gray-800">info@mpclcorp.co.in</span>
               </div> 
 
-              <div className="bg-orange-100 border-l-8 border-orange-500 text-xs sm:text-base md:text-lg px-4 py-3 w-auto sm:w-3/4">
-              <FontAwesomeIcon className="h-3 w-3 sm:h-5 sm:w-5 items-center justify-center mr-2 text-orange-600" icon={faLocationDot} />
-                <strong className="text-orange-600 overflow-hidden">Location:</strong> <span className="text-gray-700">JMD Megapolis</span>
+              <div className="bg-orange-100 border-l-8 border-orange-500 text-xs sm:text-base md:text-lg px-4 py-3 w-auto sm:w-10/12">
+              <FontAwesomeIcon className="h-3 w-3 sm:h-5 sm:w-5 items-center justify-center -mt-1 mr-2 text-orange-600" icon={faLocationDot} />
+                <strong className="text-orange-600 overflow-hidden">Location:</strong> <span className="text-gray-700 text-nowrap">JMD Megapolis</span>
                 <img src={googleMaps} onClick={handleClickMap} className='cursor-pointer items-center justify-center h-5 sm:h-6 md:h-8 inline ml-3'  alt="Link redirecting to Google Maps" />
               </div> 
 
