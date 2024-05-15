@@ -48,36 +48,36 @@ const Contact = () => {
 
   return (
 
-    <div className='w-full h-screen flex items-center justify-center -mt-3' style={{ height: 'calc(100vh - 75px)', backgroundColor: 'rgba(31, 41, 55, 0.3)', fontFamily: "Helvetica, Arial, sans-serif" }}>
+    <div className='w-full flex items-center justify-center' style={{ backgroundColor: 'rgba(31, 41, 55, 0.3)', fontFamily: "Helvetica, Arial, sans-serif" }}>
     {/* <div className='w-full h-screen flex items-center justify-center -mt-3' style={{ height: 'calc(100vh - 75px)', backgroundImage: `url(${toUseBg})`, backgroundSize: 'cover', backgroundPosition: 'center', fontFamily: "Helvetica, Arial, sans-serif" }}> */}
-      <div className=" w-9/12 rounded-md flex justify-center mt-15 px-10  p-5 gap-5 bg-white py-16">
-        <div className="w-1/2  space-y-4">
-          <h1 className="text-2xl font-bold text-blue-950">Contact Us</h1>
-          <p className="text-gray-800">We're here to help and answer any question you might have. We look forward to hearing from you. 
+      <div className=" w-9/12 rounded-md block md:flex justify-center px-10 mt-10 mb-10 p-5 gap-5 bg-white py-16">
+        <div className="w-full md:w-1/2  space-y-4">
+          <h1 className="text-lg md:text-2xl font-bold text-blue-950">Contact Us</h1>
+          <p className="text-gray-800  text-sm md:text-base">We're here to help and answer any question you might have. We look forward to hearing from you. 
             <br />
             <br />
             For any queries, please feel free to contact us through the following channels:
-              <div className="bg-orange-100 border-l-8 text-lg border-orange-500 px-4 py-3 mb-5 w-3/4 mt-5">
-              <FontAwesomeIcon className="h-4 w-4 items-center justify-center mr-2 text-orange-600" icon={faPhone} />
+              <div className="bg-orange-100 border-l-8 text-xs sm:text-base md:text-lg border-orange-500 px-4 py-3 mb-5 w-auto sm:w-3/4 mt-5">
+              <FontAwesomeIcon className="h-3 w-3 sm:h-4 sm:w-4 items-center justify-center mr-2 text-orange-600" icon={faPhone} />
                 <strong className="text-orange-600">Phone No:</strong> <span className="text-gray-800">+91 9311 112 311</span>
               </div>
 
-              <div className="bg-orange-100 border-l-8 border-orange-500 text-lg px-4 py-3 mb-5 w-3/4">
-                <FontAwesomeIcon className="h-5 w-5 items-center justify-center mr-2 text-orange-600" icon={faEnvelopeOpen} />
+              <div className="bg-orange-100 border-l-8 border-orange-500 text-xs sm:text-base md:text-lg px-4 py-3 mb-5 w-auto sm:w-3/4">
+                <FontAwesomeIcon className="h-3 w-3 sm:h-5 sm:w-5 items-center justify-center mr-2 text-orange-600" icon={faEnvelopeOpen} />
                 <strong className="text-orange-600">Email ID:</strong> <span className="text-gray-800">info@mpclcorp.co.in</span>
               </div> 
 
-              <div className="bg-orange-100 border-l-8 border-orange-500 px-4 py-3 text-lg w-3/4">
-              <FontAwesomeIcon className="h-5 w-5 items-center justify-center mr-2 text-orange-600" icon={faLocationDot} />
+              <div className="bg-orange-100 border-l-8 border-orange-500 text-xs sm:text-base md:text-lg px-4 py-3 w-auto sm:w-3/4">
+              <FontAwesomeIcon className="h-3 w-3 sm:h-5 sm:w-5 items-center justify-center mr-2 text-orange-600" icon={faLocationDot} />
                 <strong className="text-orange-600 overflow-hidden">Location:</strong> <span className="text-gray-700">JMD Megapolis</span>
-                <img src={googleMaps} onClick={handleClickMap} className='cursor-pointer h-8 inline ml-3'  alt="Link redirecting to Google Maps" />
+                <img src={googleMaps} onClick={handleClickMap} className='cursor-pointer items-center justify-center h-5 sm:h-6 md:h-8 inline ml-3'  alt="Link redirecting to Google Maps" />
               </div> 
 
           </p>
         </div>
 
 
-        <form onSubmit={handleSubmit((data) => console.log(data))} className="w-1/2 space-y-4">
+        <form onSubmit={handleSubmit((data) => console.log(data))} className="w-full md:w-1/2 mt-10 md:mt-0 space-y-4">
           <div className='flex gap-5'>
             <label className="block text-blue-950 font-bold flex-1">
               Name:
@@ -140,8 +140,9 @@ const Contact = () => {
           
           <button className=" w-full mx-auto w-80 shadow bg-orange-400 hover:bg-orange-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type='submit'>
           Submit
-        </button>      
+          </button>      
         </form>
+
       </div>
     </div>
   );

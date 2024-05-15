@@ -9,18 +9,11 @@ import firstAnimationData  from '../assests/ServicesPage/TruckAnimation.json';
 import secondAnimationData from '../assests/ServicesPage/Support.json';
 import thirdAnimationData from '../assests/ServicesPage/Secure.json'
 
+import './aboutPage.css'
+
 
 
 function About() {
-
-  const firstOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: firstAnimationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice'
-    }
-  };
   
   const secondOptions = {
     loop: true,
@@ -45,16 +38,16 @@ function About() {
     <div>
 
       <div className='w-11/12 mx-auto mb-10'>
-        <h1 className='mt-11 font-extrabold text-5xl text-center'>About Us</h1>
-        <h2 className='mt-6 font-normal text-2xl text-customBlack text-center'>Welcome to your source for Logistics Industry Insights & Solutions! Learn interesting facts on industry transformation, covering topics from trends to service excellence and beyond.</h2>
+        <h1 className='mt-11 font-extrabold text-2xl md:text-5xl text-center'>About Us</h1>
+        <h2 className=' mt-2 sm:mt-6 font-normal text-sm sm:text-lg md:text-2xl text-customBlack text-center'>Welcome to your source for Logistics Industry Insights & Solutions! Learn interesting facts on industry transformation, covering topics from trends to service excellence and beyond.</h2>
       </div>
 
 
-      <div className='w-11/12 mx-auto flex pt-10 pb-10'>
+      <div className='w-11/12 mx-auto block sm:flex pt-0 md:pt-10 pb-10'>
 
-        <div className='w-1/2'>
+        <div className='w-full sm:w-1/2'>
 
-            <div className=' text-3xl text-orange-700 pt-10' style={{ fontFamily: '"Roboto Mono", monospace',
+            <div className=' text-base sm:text-lg md:text-3xl text-orange-700 pt-2 sm:pt-6 md:pt-10' style={{ fontFamily: '"Roboto Mono", monospace',
                                                         fontOpticalSizing: 'auto',
                                                         fontWeight: '500', // Replace <weight> with the desired numeric value or keyword
                                                         fontStyle: 'normal',
@@ -63,7 +56,7 @@ function About() {
                           Why Max Pacific ?
             </div>
                         
-            <div className='mt-16 text-4xl text-justify pr-14' style={{ fontFamily: '"Inter", monospace',
+            <div className='mt-4 md:mt-16 text-base sm:text-xl md:text-4xl text-justify pr-0 sm:pr-14' style={{ fontFamily: '"Inter", monospace',
                                                         fontOpticalSizing: 'auto',
                                                         fontWeight: '700', 
                                                         fontStyle: 'normal',
@@ -72,17 +65,16 @@ function About() {
                           Transform your business with the power of our Logistics Services
             </div>
 
-            <div className='mt-10 pr-20 text-xl leading-10 text-justify'>
+            <div className='mt-4 md:mt-10 pr-0 sm:pr-8 md:pr-20 text-sm sm:text-base md:text-xl leading-2 md:leading-10 text-justify'>
                           MPCL can help you transform from A to B in just a matter of days. Our industry leading and industry defining technology can help you get your products to your customers faster than ever before. Other than this, We can also do shit tons of other things which I'd rather not talk about but we sure can do it. Hehe
             </div>
             
         </div>
 
-        <div className='w-1/2' style={{backgroundImage: `url(${traffic})`,
+        <div className='w-full sm:w-1/2 mt-4 min-h-44' style={{backgroundImage: `url(${traffic})`,
                                                       backgroundSize: 'cover',
                                                       backgroundRepeat: 'no-repeat',
                                                       backgroundPosition: 'center',
-                                                      minHeight: '560px'
                                                       }}>
         </div>
 
@@ -91,7 +83,7 @@ function About() {
       <div className='w-11/12 mx-auto text-center'>
           
                                                         
-          <div className=' text-3xl text-orange-700 pt-10' style={{ fontFamily: '"Roboto Mono", monospace',
+          <div className='text-xl md:text-3xl text-orange-700 pt-10' style={{ fontFamily: '"Roboto Mono", monospace',
                                                         fontOpticalSizing: 'auto',
                                                         fontWeight: '500', // Replace <weight> with the desired numeric value or keyword
                                                         fontStyle: 'normal',
@@ -101,11 +93,22 @@ function About() {
           </div>
           
           <div className='w-[95%] mx-auto min-h-10 mt-8 shadow-2xl rounded-xl px-10 mb-10 border-orange-600 border-2'>
-          <div className='flex gap-16'>
+          <div className='block md:flex gap-16'>
               <div className='w-full'>
-                    <Lottie options={firstOptions} height={100} width={100} style={{ marginLeft: '-20px' }} />
+              <div className='lottie-container'>
+                      <Lottie
+                          options={{
+                            loop: true,
+                            autoplay: true,
+                            animationData: firstAnimationData,
+                            rendererSettings: {
+                              preserveAspectRatio: 'xMidYMid slice'
+                            }
+                          }}
+                        />
+                    </div>
 
-                    <div className=' -mt-6 mb-2 text-lg text-left pl-2' style={{ fontFamily: '"Roboto Mono", monospace',
+                    <div className=' -mt-3 sm:-mt-6 mb-2 text-sm sm:text-lg text-left pl-0 sm:pl-2' style={{ fontFamily: '"Roboto Mono", monospace',
                                                   fontOpticalSizing: 'auto',
                                                   fontWeight: '700', 
                                                   fontStyle: 'normal',
@@ -117,7 +120,7 @@ function About() {
                     <div className='w-full h-0.5 bg-orange-600'></div>
 
                     <div>
-                      <p className='mt-6 mb-14 text-base   leading-8 text-justify pr-6'>
+                      <p className='mt-4 sm:mt-6 mb-4 sm:mb-14 text-sm sm:text-base leading-6 sm:leading-8 text-justify pr-6'>
                       We pride ourselves on providing industry-leading, rapid delivery services to our customers. 
                       Our commitment to swift delivery is unmatched, ensuring that you receive your orders faster than ever before.
                       </p>
@@ -126,9 +129,20 @@ function About() {
                 
 
                 <div className='w-full'>
-                    <Lottie options={secondOptions} height={100} width={100} style={{ marginLeft: '-20px' }} />
+                    <div className='lottie-container'>
+                      <Lottie
+                          options={{
+                            loop: true,
+                            autoplay: true,
+                            animationData: secondAnimationData,
+                            rendererSettings: {
+                              preserveAspectRatio: 'xMidYMid slice'
+                            }
+                          }}
+                        />
+                    </div>
 
-                    <div className=' -mt-6 mb-2 text-lg  text-left pl-2' style={{ fontFamily: '"Roboto Mono", monospace',
+                    <div className='-mt-3 sm:-mt-6 mb-2 text-sm sm:text-lg text-left pl-0 sm:pl-2' style={{ fontFamily: '"Roboto Mono", monospace',
                                                   fontOpticalSizing: 'auto',
                                                   fontWeight: '700', 
                                                   fontStyle: 'normal',
@@ -140,7 +154,7 @@ function About() {
                     <div className='w-full h-0.5 bg-orange-600'></div>
 
                     <div>
-                      <p className='mt-6 mb-14 text-base   leading-8 text-justify pr-6'>
+                      <p className='mt-4 sm:mt-6 mb-4 sm:mb-14 text-sm sm:text-base leading-6 sm:leading-8 text-justify pr-6'>
                       We pride ourselves on providing industry-leading, rapid delivery services to our customers. 
                       Our commitment to swift delivery is unmatched, ensuring that you receive your orders faster than ever before.
                       </p>
@@ -149,9 +163,20 @@ function About() {
 
 
                 <div className='w-full'>
-                    <Lottie options={thirdOptions} height={100} width={100} style={{ marginLeft: '-20px' }} />
+                    <div className='lottie-container'>
+                      <Lottie
+                          options={{
+                            loop: true,
+                            autoplay: true,
+                            animationData: thirdAnimationData,
+                            rendererSettings: { 
+                              preserveAspectRatio: 'xMidYMid slice'
+                            }
+                          }}
+                        />
+                    </div>
 
-                    <div className=' -mt-6 mb-2 text-lg text-left pl-2' style={{ fontFamily: '"Roboto Mono", monospace',
+                    <div className='-mt-3 sm:-mt-6 mb-2 text-sm sm:text-lg text-left pl-0 sm:pl-2' style={{ fontFamily: '"Roboto Mono", monospace',
                                                   fontOpticalSizing: 'auto',
                                                   fontWeight: '700', 
                                                   fontStyle: 'normal',
@@ -163,7 +188,7 @@ function About() {
                     <div className='w-full h-0.5 bg-orange-600'></div>
 
                     <div>
-                      <p className='mt-6 mb-14 text-base   leading-8 text-justify pr-6'>
+                      <p className='mt-4 sm:mt-6 mb-4 sm:mb-14 text-sm sm:text-base leading-6 sm:leading-8 text-justify pr-6'>
                       We pride ourselves on providing industry-leading, rapid delivery services to our customers. 
                       Our commitment to swift delivery is unmatched, ensuring that you receive your orders faster than ever before.
                       </p>
@@ -177,9 +202,9 @@ function About() {
 
       </div>
 
-       <div className='w-10/12 mx-auto pt-16 pb-10 flex'>
-           <div className='w-1/2'>
-                <div className=' text-3xl text-orange-700'  style={{ fontFamily: '"Roboto Mono", monospace',
+       <div className='w-10/12 mx-auto pt-16 pb-10 flex items-center'>
+           <div className='w-full sm:w-10/12 md:w-1/2'>
+                <div className='text-lg md:text-3xl text-orange-700'  style={{ fontFamily: '"Roboto Mono", monospace',
                                                   fontOpticalSizing: 'auto',
                                                   fontWeight: '700', 
                                                   fontStyle: 'normal',
@@ -189,13 +214,13 @@ function About() {
                 </div>
 
                 <div>
-                    <p className='mt-6 mb-14 text-lg   leading-8 text-justify pr-6'>
+                    <p className='mt-3 md:mt-6 mb-5 md:mb-14 text-base  md:text-lg leading-6 md:leading-8 text-justify pr-6'>
                       We pride ourselves on providing industry-leading, rapid delivery services to our customers. 
                       Our commitment to swift delivery is unmatched, ensuring that you receive your orders faster than ever before.
                     </p>
                 </div>
 
-                <div className=' text-3xl text-orange-700'  style={{ fontFamily: '"Roboto Mono", monospace',
+                <div className='text-lg md:text-3xl text-orange-700'  style={{ fontFamily: '"Roboto Mono", monospace',
                                                   fontOpticalSizing: 'auto',
                                                   fontWeight: '700', 
                                                   fontStyle: 'normal',
@@ -205,14 +230,14 @@ function About() {
                 </div>
 
                 <div>
-                    <p className='mt-6 mb-14 text-lg   leading-8 text-justify pr-6'>
+                    <p className='mt-3 md:mt-6 mb-14 text-base md:text-lg leading-6 md:leading-8 text-justify pr-6'>
                       We pride ourselves on providing industry-leading, rapid delivery services to our customers. 
                       Our commitment to swift delivery is unmatched, ensuring that you receive your orders faster than ever before.
                     </p>
                 </div>
 
             </div>  
-            <div className='w-1/2 pl-10 '>
+            <div className='hidden sm:block w-1/2 ml-0 md:ml-10 '>
                 <div className='w-5/6 h-5/6 mx-auto'>
                   <img src={mission} alt="" />
                 </div>

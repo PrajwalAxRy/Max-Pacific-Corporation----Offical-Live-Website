@@ -66,8 +66,8 @@ function Blogs() {
   return (
     <div>
       <div className='w-11/12 mx-auto'>
-        <h1 className='mt-11 font-extrabold text-5xl'>Blogs</h1>
-        <h2 className='w-3/4 mt-6 font-normal text-2xl text-customBlack text-justify'>Welcome to your source for Logistics Industry Insights & Solutions! Learn interesting facts on industry transformation, covering topics from trends to service excellence and beyond.</h2>
+        <h1 className='mt-11 font-extrabold text-2xl md:text-5xl'>Blogs</h1>
+        <h2 className='w-full sm:w-10/12 md:w-3/4 mt-6 font-normal text-sm sm:text-lg md:text-2xl text-customBlack text-justify'>Welcome to your source for Logistics Industry Insights & Solutions! Learn interesting facts on industry transformation, covering topics from trends to service excellence and beyond.</h2>
       </div>
       
 
