@@ -105,7 +105,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="flex justify-between px-20 mt-16 mb-16 items-center">
+        <div className="flex px-5 sm:px-10 md:px-20 mt-16 mb-16 items-center justify-center">
           <div>
             <span className='headerTwo'>Trusted Partners</span>
             <br />

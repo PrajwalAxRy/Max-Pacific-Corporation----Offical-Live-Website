@@ -150,17 +150,12 @@ function Services() {
                             Contact Us
                       </button>
               </div>     
-
-
-
-              {/* THIS IS FOR TRANSPORTATION */}
-              {/* THIS IS FOR THE TRANSPORTATION SERVICES */}
                 <div className='absolute top-3 left-1'>
-                <div className={`p-6 rounded-lg mx-auto w-[95%] custom-shadow-two z-40 ${activeTab === 'transportation' || activeTab === 'warehousing' ? 'fadeIn block md:flex' : 'hidden'}`} style={{backgroundColor:"#FFF5EA"}}>
+                  <div className={`p-6 rounded-lg mx-auto w-[95%] custom-shadow-two z-40 ${activeTab === 'transportation' || activeTab === 'warehousing' ? 'fadeIn block md:flex' : 'hidden'}`} style={{backgroundColor:"#FFF5EA"}}>
                       <div className='w-full md:w-1/2'>
                             <div className='text-xs sm:text-base md:text-xl text-orange-700' style={{ fontFamily: '"Roboto Mono", monospace',
                                                             fontOpticalSizing: 'auto',
-                                                            fontWeight: '500', // Replace <weight> with the desired numeric value or keyword
+                                                            fontWeight: '500',
                                                             fontStyle: 'normal',
                                                             letterSpacing: '0.25em',
                                                           }}>
