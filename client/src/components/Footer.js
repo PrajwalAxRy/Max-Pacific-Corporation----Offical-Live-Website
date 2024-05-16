@@ -54,7 +54,7 @@ function Footer() {
                       <div className='flex items-center mb-8'>
                           <div><img src={mailIcon} alt='Just an icon' className=' w-12 h-12 mr-2' /></div>
                           <div>
-                            <div>Email ID</div>
+                            <div>Email ID</div>                                      
                             <div className=' -mt-1'>info@mpclcorp.co.in</div>
                           </div>
                         </div>
