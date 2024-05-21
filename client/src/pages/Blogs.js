@@ -1,6 +1,9 @@
 import React from 'react'
 import BlogComponent from '../components/blogPageComponent';
 
+// Authors
+import vaibhav from '../assests/Author/vaibhav.png'
+
 // Blog 1
 import blog1 from '../assests/BlogPage/Blog1.png';
 import IshitaChhakra from '../assests/BlogPage/IshitaChhakra.png'
@@ -17,24 +20,26 @@ function Blogs() {
     {
       backgroundImage: blog1,
       category: "#Future",
-      title: "The future of Gig Economy in Transportation",
-      content: "This blog talks about how gig economy in transportation translate to convenience for both workers and customers.",
+      title: "Digital Transformation Wave in Warehousing",
+      content: "This blog explores the impact of digital transformation in warehousing, highlighting key technologies, challenges, and opportunities for enhancing efficiency, productivity, and resilience.",
       date: "April 16th, 2024",
       readingTime: "5 min read",
-      authorImage: IshitaChhakra,
-      authorName: "Ishita Chhakra",
-      authorRole: "Marketing Intern, MPCL"
+      authorImage: vaibhav,
+      authorName: "Vaibhav Nemani",
+      authorRole: "SDE Intern, MPCL",
+      url: '/blogOneMPCL'
     },
     {
       backgroundImage: blog2,
       category: "#Technology",
-      title: "The Rise of AI in Everyday Life",
-      content: "Explore how AI is integrating into every aspect of our lives and what it means for the future. AI will take your job. Fear AI. AI and beyond becase Virat Kohli is the best.",
+      title: "Why fast shipping is not just about speed anymore",
+      content: "The blog emphasizes the importance of fast, efficient, transparent, and human-centric logistics in enhancing customer satisfaction and loyalty in the fast-paced world of online shopping.",
       date: "May 10th, 2024",
       readingTime: "7 min read",
-      authorImage: Prajwal,
+      authorImage: IshitaChhakra,
       authorName: "Prajwal Singh",
-      authorRole: "SDE Intern, MPCL"
+      authorRole: "Marketing Intern, MPCL",
+      url: '/blogTwoMPCL'
     },
     
     {
@@ -46,7 +51,8 @@ function Blogs() {
       readingTime: "7 min read",
       authorImage: IshitaChhakra,
       authorName: "Vaibhav Nemani",
-      authorRole: "SDE Intern, MPCL"
+      authorRole: "SDE Intern, MPCL",
+      url: '/blogThreeMPCL'
     }
     
     // Add more blogs here
@@ -84,6 +90,7 @@ function Blogs() {
             authorImage={blog.authorImage}
             authorName={blog.authorName}
             authorRole={blog.authorRole}
+            url={blog.url}
           />
         ))}
       </div>

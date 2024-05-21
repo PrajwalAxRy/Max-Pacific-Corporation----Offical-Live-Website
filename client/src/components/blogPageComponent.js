@@ -1,4 +1,6 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
+
 import blog1 from '../assests/BlogPage/Blog1.png';
 import IconReadingTime from '../assests/IconReadingTime.png'
 import IshitaChhakra from '../assests/IshitaChhakra.png'
@@ -14,10 +16,18 @@ function BlogPageComponent({
     readingTime,
     authorImage,
     authorName,
-    authorRole
+    authorRole,
+    url
 }) {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('.' + url);
+    }
+
     return (
-        <div className='w-11/12 mx-auto bg-white mb-8 rounded-xl overflow-hidden  transition duration-300 hoverEffects'>
+        <div className='w-11/12 mx-auto bg-white mb-8 rounded-xl overflow-hidden  transition duration-300 hoverEffects' onClick={handleClick}>
             <div className='w-full flex gap-10'>
                 <div className='w-1/2 bg-red-600 rounded-l-xl' style={{ 
                     backgroundImage: `url(${backgroundImage})`,
@@ -26,7 +36,7 @@ function BlogPageComponent({
                     backgroundPosition: 'center',
                 }}>
                 </div>
-                <div className='w-2/3 md:w-1/2 pt-2 relative'>
+                <div className='w-2/3 md:w-1/2 pt-2 relative' >
                     <p className='mt-2 rounded-full inline-block bg-gray-200 drop-shadow-2xl px-1 sm:px-2 md:px-5 py-1 text-xs md:text-sm text-slate-900'>{category}</p>
                     <h1 className='text-customBlack text-sm sm:text-xl md:text-4xl font-bold mt-4 pr-8'>{title}</h1>
                     <p className='mt-6 hidden sm:block text-sm md:text-base pr-8'>{content}</p>

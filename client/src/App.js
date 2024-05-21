@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import HeaderBar from './components/HeaderBar'; // Adjust the import path as necessary
 import Footer from './components/Footer';
 import Home from './pages/Home'; // Placeholder for your Home component
@@ -12,6 +12,9 @@ import TrackShipment from './pages/TrackShipment';
 import About from './pages/About';
 import Team from './pages/Team';
 import Gallery from './pages/Gallery';
+
+import BlogOneMPCL from './pages/Blogs/BlogOneMPCL';
+import BlogTwoMPCL from './pages/Blogs/BlogTwoMPCL';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -34,6 +37,8 @@ function App() {
             <Route path="/company/about" element={<About />} />
             <Route path="/company/team" element={<Team />} />
             <Route path="/company/gallery" element={<Gallery />} />
+            <Route path="/blogs/blogOneMPCL" element={<BlogOneMPCL />} />
+            <Route path="/blogs/blogTwoMPCL" element={<BlogTwoMPCL />} />
           </Routes>
         </div>
         <Footer/>
