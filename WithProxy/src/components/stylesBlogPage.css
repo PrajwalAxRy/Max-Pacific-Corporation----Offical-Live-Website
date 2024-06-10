@@ -1,0 +1,23 @@
+/* stylesBlogPage.css */
+.hoverEffects {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-color: #ffffff; /* Initial background color */
+}
+
+.hoverEffects:hover {
+    transform: scale(1.05); /* Scales both width slightly and height more significantly */
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.35); /* Deeper and wider shadow for a dramatic effect */
+    background-color: #f8f8f8; /* Changes background color on hover for a subtle effect */
+}
+
+
+.newhoverEffects {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-color: #ffffff; /* Initial background color */
+}
+
+.newhoverEffects:hover {
+    transform: scale(1.1); /* Scales both width slightly and height more significantly */
+    box-shadow: 0 12px 45px rgba(0, 0, 0, 0.35); /* Deeper and wider shadow for a dramatic effect */
+    background-color: #f8f8f8; /* Changes background color on hover for a subtle effect */
+}

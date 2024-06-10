@@ -1,0 +1,182 @@
+.banner {
+    background: rgba(217, 217, 217, 0.20);
+    height: 37px;
+    width: 357px;
+    color: white;
+    font-size: 25.89px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    border-left: 10px solid orange;
+    padding-left: -5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 950px) {
+    .banner {
+      width: 70%; /* Full width on smaller screens */
+      font-size: 16px; /* Smaller font size on smaller screens */
+      height: 30px; /* Smaller height on smaller screens */
+    }
+  }
+  
+  @media (max-width: 559px) {
+    .banner {
+      font-size: 12px; /* Even smaller font size for very small screens */
+      padding-left: 0; /* Remove padding on very small screens */
+    }
+  }
+
+
+/* Banner.css */
+
+.textBanner {
+    color: white;
+    font-size: 46.29px;
+    font-family: Inter;
+    font-weight: 800;
+    line-height: 60px;
+    word-wrap: break-word;
+    margin-top: 20px;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .textBanner {
+      font-size: 36px;
+      line-height: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 559px) {
+    .textBanner {
+      font-size: 26px;
+      line-height: 40px;
+    }
+  }
+
+
+  /* SecondaryBanner.css */
+
+.secondaryBanner {
+    width: 70%;
+    margin-top: 30px;
+    color: white;
+    text-align: justify;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 300;
+    line-height: 24.24px;
+    word-wrap: break-word;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .secondaryBanner {
+      width: 90%;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  
+  @media only screen and (max-width: 560px) {
+    .secondaryBanner {
+      width: 100%;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+
+  .btn {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+
+  .headerTwo {
+    color: #060B22;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    line-height: 48.49px;
+    word-wrap: break-word;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .headerTwo {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+  
+  @media only screen and (max-width: 560px) {
+    .headerTwo {
+      font-size: 18px;
+      line-height: 36px;
+    }
+  }
+
+
+  .contentTwo {
+    width: 85%;
+    color: black;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .contentTwo {
+      font-size: 12px;
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 560px) {
+    .contentTwo {
+      font-size: 9px;
+      width: 100%;
+    }
+  }
+
+
+
+  .imageTwo {
+    height: 150px;
+    width: 400px;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .imageTwo {
+      height: 120px;
+    width: 400px;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .imageTwo {
+      height: 120px;
+    width: 500px;
+    }
+  }
+  
+  @media only screen and (max-width: 560px) {
+    .imageTwo {
+      height: 100px;
+    width: 400px;
+    margin-left: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .imageTwo {
+      height: 100px;
+    width: 600px;
+    margin-left: 10px;
+    }
+  }
